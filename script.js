@@ -10,7 +10,7 @@ boxes.forEach(box => {
         if (box.textContent === "" ){
             box.textContent = 'O'
             if (Game_condition('O')){
-                result.textContent = "You Win 🎉"
+                result.textContent = "You Win"
                 show_result()
                 return true
             }
@@ -112,4 +112,5 @@ function show_result(){
         end_page.style.display = 'none';
         boxes.forEach(box => box.textContent = "")     
     }
+
 }
